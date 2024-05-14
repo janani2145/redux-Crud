@@ -1,9 +1,7 @@
-// store.js
-import { configureStore } from '@reduxjs/toolkit';
-import crudReducer from './crudSlice';
+import { createStore, applyMiddleware } from 'redux';
+import rootReducer from './reducers';
+import { thunk } from 'redux-thunk';
 
-export default configureStore({
-  reducer: {
-    crud: crudReducer,
-  },
-});
+const store = createStore(rootReducer, applyMiddleware(thunk));
+
+export default store;

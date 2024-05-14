@@ -1,15 +1,18 @@
-// import EmployeeForm from "./components/EmployeeForm";
-import './App.css';
-import CrudApp from './components/crudApp';
 
+// import EmployeeTable from "./components/EmployeeTable";
+import './App.css';
+import EmployeeForm from './components/EmployeeForm';
 
 function App() {
   return (
-      <div className="App">
-        {/* <EmployeeForm /> */}
-        <CrudApp/>
-    </div>
-
+    <>
+      <div>
+        
+        <EmployeeForm />
+   
+      </div>
+      
+      </>
   );
 }
 

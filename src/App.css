@@ -10,23 +10,29 @@ body {
   min-height: 100vh;
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: start;
   padding: 20px;
-  background: rgb(130, 106, 251);
+  background-image: url("/public/image3.jpg");
+  background-size: cover;
+  color: #fff !important;
 }
 .container {
   position: relative;
-  max-width: 700px;
+  max-width: 500px;
   width: 100%;
-  background: #fff;
-  padding: 25px;
+  background:rgba(3, 0, 0, 0.027);
+  padding: 20px;
   border-radius: 8px;
-  box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.822);
+  margin-top: 20px;
 }
 .container header {
   font-size: 1.5rem;
-  color: #333;
+  color: #fff;
   font-weight: 500;
+  text-align: center;
+}
+h1{
   text-align: center;
 }
 .container .form {
@@ -34,18 +40,18 @@ body {
 }
 .form .input-box {
   width: 100%;
-  margin-top: 20px;
+  margin-top: 10px;
 }
 .input-box label {
-  color: #333;
+  color: #ccc;
 }
 .form :where(.input-box input, .select-box) {
   position: relative;
-  height: 50px;
+  height: 35px;
   width: 100%;
   outline: none;
   font-size: 1rem;
-  color: #707070;
+  color: #333;
   margin-top: 8px;
   border: 1px solid #ddd;
   border-radius: 6px;
@@ -62,7 +68,7 @@ body {
   margin-top: 20px;
 }
 .gender-box h3 {
-  color: #333;
+  color: #000;
   font-size: 1rem;
   font-weight: 400;
   margin-bottom: 8px;
@@ -77,13 +83,14 @@ body {
   column-gap: 5px;
 }
 .gender input {
-  accent-color: rgb(130, 106, 251);
+  accent-color: rgb(106, 198, 251);
 }
 .form :where(.gender input, .gender label) {
   cursor: pointer;
 }
+
 .gender label {
-  color: #707070;
+  color:#ccc;
 }
 .address :where(input, .select-box) {
   margin-top: 15px;
@@ -106,7 +113,7 @@ body {
   border: none;
   cursor: pointer;
   transition: all 0.2s ease;
-  background: rgb(130, 106, 251);
+  background: rgb(48, 150, 180);
 }
 .form button:hover {
   background: rgb(88, 56, 250);
